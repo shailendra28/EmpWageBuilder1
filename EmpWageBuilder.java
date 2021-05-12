@@ -1,22 +1,26 @@
+
 public class EmpWageBuilder {
 
 	public static void main(String[] args) {
-		System.out.println("========> Welcome To The Employee Wage Computation Program <========");
-		// Condition to check Employee Attendance
-		int WAGE_PER_HOUR = 20;
-		int FULL_DAY_HOUR = 8;
-		int empWage = 0;
-		int EmpCheck = 1;
-        double present = Math.floor(Math.random()*10) %2;
-        if (present==EmpCheck)
-        	System.out.println("Employee is present");
+		System.out.println("========> Welcome To The Employee Wage Computation Program ");
+	    int IS_PART_TIME = 1;
+        int IS_FULL_TIME = 2;
+        int WAGE_PER_HOUR  = 20;
+        int empHrs = 0;
+        int empWage = 0;
+        double empCheck = Math.floor(Math.random()*10) %3;
+        if (empCheck==IS_PART_TIME)
+        	empHrs =4;
+        else if (empCheck == IS_FULL_TIME)
+        	empHrs = 8;
+        	
         else
-        	System.out.println("Employee is abscent not Earn");
-        // Condition for Daily Employee Wage
-        if (present==EmpCheck)
-        	empWage= WAGE_PER_HOUR*FULL_DAY_HOUR;
-        System.out.println("Emp Wage : " +empWage);
-
+        	
+        	empHrs=0;
+        empWage = empHrs *WAGE_PER_HOUR ;
+        System.out.println("Employee Wage is : " +empWage);
+		       
+			        } 
 	}
 
-}
+
