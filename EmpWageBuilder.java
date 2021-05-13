@@ -36,9 +36,9 @@ public class EmpWageBuilder {
 	    }
 	    //Inside method created an object emp to call calculateTotalwage method
 	    public static void main(String[] args) {
-			System.out.println("========> Welcome To The Employee Wage Computation Program ");
-			EmpWageBuilder emp = new EmpWageBuilder();
-			emp.calculateTotalwage();
+		  System.out.println("========> Welcome To The Employee Wage Computation Program ");
+		  EmpWageBuilder emp = new EmpWageBuilder();
+		  emp.calculateTotalwage();
         } 
 	     
   } 
