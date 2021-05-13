@@ -27,7 +27,6 @@ public class EmpWageBuilder {
         empWage = empHrs * WAGE_PER_HOUR;//Calculating Employee Wage
         TotalWage += empWage; //Calculating Total Employee Wage
         System.out.println("Employee Wage is : " +empWage);
-        
         } 
         System.out.println("Total Employee wage of Month :" + TotalWage);
      } 
