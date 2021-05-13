@@ -2,15 +2,13 @@
 public class EmpWageBuilder {
 	public static final  int IS_PART_TIME = 1;// Variable will be a compile time constant
     public static final int IS_FULL_TIME = 2;
-    public static final int WAGE_PER_HOUR = 20;
-    public static final int DAYS_PER_MONTH = 20;
-    public static final int MAX_HOUR_MONTH = 100;
-        int empHrs = 0;
+    //Created Method along with parameter
+    //Put the while loop inside a method
+    public static int calculateTotalwage(String company, int WAGE_PER_HOUR, int  DAYS_PER_MONTH, int MAX_HOUR_MONTH)
+    { 
+	    int empHrs = 0;
         int totalWorkingDays = 0;
 	    int totalEmpHrs = 0;
-	    //Put the while loop inside a method
-        //Using for loop for days per month
-	    void calculateTotalwage() 
 	    {
         while (totalEmpHrs <=  MAX_HOUR_MONTH && totalWorkingDays < DAYS_PER_MONTH) 
         {
@@ -32,13 +30,16 @@ public class EmpWageBuilder {
         System.out.println("Day : " + totalWorkingDays + " Emp Hr: " +empHrs);
         }
         int TotalWage = totalEmpHrs * WAGE_PER_HOUR;
-        System.out.println("Total Employee wage of Month: " + TotalWage);
+        System.out.println("Total Employee wage of Company: " + TotalWage);
+        return TotalWage;
 	    }
-	    //Inside method created an object emp to call calculateTotalwage method
+	  }
+	    
+	    //Inside main method parameter work as input
 	    public static void main(String[] args) {
 		  System.out.println("========> Welcome To The Employee Wage Computation Program ");
-		  EmpWageBuilder emp = new EmpWageBuilder();
-		  emp.calculateTotalwage();
+		  calculateTotalwage("DMart", 20, 20, 100);
+			calculateTotalwage("Reliance", 30, 15, 150);
         } 
 	     
   } 
