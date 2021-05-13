@@ -44,9 +44,12 @@ public class EmpWageBuilder {
 	  }
 	    public static void main(String[] args) {
 		  System.out.println("========> Welcome To The Employee Wage Computation Program ");
-		  EmpWageBuilder DMart = new EmpWageBuilder("Dmart", 20,29,100);
+		  EmpWageBuilder DMart = new EmpWageBuilder("Dmart", 25,28,100);
 		  DMart.computeEmpWage();
 		  System.out.println(DMart);
+		  EmpWageBuilder Relience = new EmpWageBuilder("Relience",15,30,160);
+		  Relience.computeEmpWage();
+		  System.out.println(Relience);
         } 
 	     
   } 
